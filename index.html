@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>formularioGym</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Planes</a></li>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Bienvenido a GOKU-GYM</h1>
+            <p>¡Entrená y llega al super sayayin nivel dios!</p>
+        </div>
+    </header>
+    <section class="imagen-destacada">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Gimnasio" />
+    </section>
+    <main>
+        <section class="formulario-registro">
+            <h2>Registro de Usuario</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="plan">Tipo de plan:</label>
+                <select id="plan" name="plan" required>
+                    <option value="">-- Seleccioná un plan --</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <label for="horario">Horario preferido:</label>
+                <select id="horario" name="horario" required>
+                    <option value="">-- Seleccioná un horario --</option>
+                    <option value="mañana">Mañana (6:00 - 10:00)</option>
+                    <option value="tarde">Tarde (12:00 - 16:00)</option>
+                    <option value="noche">Noche (18:00 - 22:00)</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los términos y condiciones
+                </label>
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
